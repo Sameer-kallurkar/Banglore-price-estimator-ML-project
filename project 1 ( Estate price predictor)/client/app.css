@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --light_bd: #E9E7E4;
+    --light_text:#000000;
+    --light_bar:#D9D9D9;
+    --dark_bg: #1B1B1A;
+    --dark_text: #E0E0E0;
+    --dark_bar: #222222;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    /* background-color: var(--dark_bg); */
+    color: var(--dark_text);
+    font-family: 'Anton';
+    overflow: hidden;
+}
+
+html{
+    background-color: var(--dark_bg)
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100%;
+    padding: 25px;
+}
+
+#estimated_price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4%;
+    font-size: 50px;
+}
+
+.nbr{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 1));
+}
+
+.info-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-item {
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-right: 2px solid #555;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-item:last-child {
+    border-right: none;
+}
+
+.input-field {
+    background-color: #1E1E1E;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    width: 50px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.dropdown {
+    background-color: #1E1E1E;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    appearance: none; /* Hides the default dropdown arrow */
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.estimate-button {
+    background-color: #333;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.estimate-button:hover {
+    background-color: #555;
+}
+
+.location_dropdown{
+    width:150px;
+    text-overflow: ellipsis;
+}

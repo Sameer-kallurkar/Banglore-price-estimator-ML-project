@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="./app.css">
+    <title>Banglore house price estimator</title>
+</head>
+<body>
+    <div id="main">
+        <div id="estimated_price"></div>
+        <div id="images">
+            <img id="bhk-image" class="nbr" src="./images/2-3 bhk.png" alt="BHK Image">
+        </div>
+        <div class="info-panel">
+            <div class="info-item">
+                <input type="text" value="1500" class="input-field" id="area">
+                sqft
+            </div>
+            <div class="info-item">
+                <select class="dropdown" id="bhk-dropdown" onchange="changeImage()">
+                    <option name = "bhk" value="1">1</option>
+                    <option name = "bhk" value="2">2</option>
+                    <option name = "bhk" value="3" selected>3</option>
+                    <option name = "bhk" value="4">4</option>
+                    <option name = "bhk" value="5">5</option>
+                    <option name = "bhk" value="6">6</option>
+                </select>
+                BHK
+            </div>
+            <div class="info-item">
+                <select class="dropdown">
+                    <option name = "bathrooms" value="1">1</option>
+                    <option name = "bathrooms" value="2">2</option>
+                    <option name = "bathrooms" value="3" selected>3</option>
+                    <option name = "bathrooms" value="4">4</option>
+                    <option name = "bathrooms" value="5">5</option>
+                    <option name = "bathrooms" value="6">6</option>
+                </select>
+                Bathroom
+            </div>
+            <div class="info-item">
+                <select class="dropdown location_dropdown" id="locations">
+                    <option value="electronic-city" selected>Electronic City</option>
+                </select>
+            </div>
+            <div class="info-item">
+                <button class="estimate-button" onclick="onClickedEstimatePrice()">Estimate</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
